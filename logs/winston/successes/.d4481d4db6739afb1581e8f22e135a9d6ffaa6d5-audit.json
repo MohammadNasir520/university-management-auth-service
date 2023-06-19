@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\successes\\.d4481d4db6739afb1581e8f22e135a9d6ffaa6d5-audit.json",
+    "files": [
+        {
+            "date": 1687178356949,
+            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\successes\\phu-2023-06-19-18-success.log",
+            "hash": "657fb47af24f9685b834930cd132eba5a873ffac2f1c9e06d1515ede3a843ad9"
+        }
+    ],
+    "hashType": "sha256"
+}
