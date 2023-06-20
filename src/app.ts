@@ -2,7 +2,9 @@ import express, { Application } from 'express'
 
 import cors from 'cors'
 import globalErrorHandlar from './app/middlewares/globalErrorHandlar'
-import { UserRoutes } from './app/modules/users/user.route'
+import { UserRoutes } from './app/modules/user/user.route'
+
+// import ApiError from './errors/ApiError'
 
 const app: Application = express()
 
@@ -13,9 +15,8 @@ app.use(express.urlencoded({ extended: true }))
 // Application routes
 app.use('/api/v1/users', UserRoutes)
 
-// app.get('/', (req: Request, res: Response, next: NextFunction) => {
-//   throw new ApiError(400, 'something went wrong')
-//   next('error') // if I send parameter to next. it assumed next as error
+// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+//   await Promise.reject(new Error('unhandled Promise Rejection'))
 // })
 
 //global error handling

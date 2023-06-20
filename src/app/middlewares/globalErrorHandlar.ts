@@ -4,12 +4,23 @@ import { IGenericErrorMessage } from '../../interfaces/error'
 import handleValidationError from '../../errors/handleValidationError'
 
 import ApiError from '../../errors/ApiError'
+import { errorLogger } from '../../shared/logger'
 
 const globalErrorHandlar: ErrorRequestHandler = (error, req, res, next) => {
+  // eslint-disable-next-line no-unused-expressions
+  config.env === 'development'
+    ? console.log('globalErrorHandler', error)
+    : errorLogger.error('globalErrorHandler', error)
+
   let statusCode = 500
   let message = 'something went wrong'
   let errorMessages: IGenericErrorMessage[] = []
 
+  /*here three type of error 
+  1.mongoose error
+  2. error with custom type ApiError
+  3.Error for missing something and for mistake
+  */
   if (error?.name === 'validationError') {
     const simplifiedError = handleValidationError(error)
     statusCode = simplifiedError.statusCode
