@@ -1,8 +1,9 @@
 import express, { Application } from 'express'
-import userRouter from '../src/app/modules/users/users.route'
 
 import cors from 'cors'
 import globalErrorHandlar from './app/middlewares/globalErrorHandlar'
+import { UserRoutes } from './app/modules/users/user.route'
+
 const app: Application = express()
 
 app.use(cors())
@@ -10,10 +11,10 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // Application routes
-app.use('/api/v1/users', userRouter)
+app.use('/api/v1/users', UserRoutes)
 
-// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
-//   // throw new ApiError(400, 'something went wrong')
+// app.get('/', (req: Request, res: Response, next: NextFunction) => {
+//   throw new ApiError(400, 'something went wrong')
 //   next('error') // if I send parameter to next. it assumed next as error
 // })
 
