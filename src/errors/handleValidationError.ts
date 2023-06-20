@@ -24,3 +24,14 @@ const handleValidationError = (
 }
 
 export default handleValidationError
+
+/**const obj = {
+  name: 'John',
+  age: 25,
+  city: 'New York',
+};
+
+const values = Object.values(obj);
+console.log(values);
+// Output: ['John', 25, 'New York']
+ */

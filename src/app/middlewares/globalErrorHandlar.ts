@@ -17,7 +17,7 @@ const globalErrorHandlar: ErrorRequestHandler = (error, req, res, next) => {
     errorMessages = simplifiedError.errorMessages
   } else if (error instanceof ApiError) {
     statusCode = error?.statusCode
-    message = error.message
+    message = error?.message
     errorMessages = error?.message
       ? [
           {
