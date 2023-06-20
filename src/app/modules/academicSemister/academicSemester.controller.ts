@@ -1,25 +1,26 @@
-import { RequestHandler } from 'express';
+import { NextFunction, Request, Response } from 'express';
 
 import { AcademicSemesterService } from './acdemicSemester.service';
+import catchAsync from '../../../shared/catchasync';
+import sendResponse from '../../../shared/sendResponse';
+import httpStatus from 'http-status';
 
-const createSemester: RequestHandler = async (req, res, next) => {
-  try {
-    // await createUserZodSchema.parseAsync(req)
-
+const createSemester = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
     const { ...academicSemesterData } = req.body;
     const result = await AcademicSemesterService.createSemester(
       academicSemesterData
     );
-    res.status(200).json({
+
+    sendResponse(res, {
+      statusCode: httpStatus.OK,
       success: true,
       message: 'academicSemester created successfully',
       data: result,
     });
-  } catch (err) {
-    next(err);
+    next();
   }
-};
-
+);
 export const AcademicSemesterController = {
   createSemester,
 };
