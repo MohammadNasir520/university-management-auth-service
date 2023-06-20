@@ -64,6 +64,11 @@
             "date": 1687261099649,
             "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-17-error.log",
             "hash": "bf25499572e54d9bea5a2729429ac432ab53cd0fe62ab4d41babb428f8c068a4"
+        },
+        {
+            "date": 1687267082892,
+            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-19-error.log",
+            "hash": "7464c4f12e77fcfefaa56d005370f71453a3281577c6847501c40b04d28e61d2"
         }
     ],
     "hashType": "sha256"
