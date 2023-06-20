@@ -1,0 +1,16 @@
+{
+  message: 'database connect successfully',
+  level: 'info',
+  label: 'PH',
+  timestamp: '2023-06-19T12:39:23.491Z'
+}
+{
+  message: 'server is running on port 5000',
+  level: 'info',
+  label: 'PH',
+  timestamp: '2023-06-19T12:39:23.509Z'
+}
+ Mon Jun 19 2023  18:40:59 [PH] info: database connect successfully
+ Mon Jun 19 2023  18:40:59 [PH] info: server is running on port 5000
+ Mon Jun 19 2023  18:41:15 [PH] info: database connect successfully
+ Mon Jun 19 2023  18:41:15 [PH] info: server is running on port 5000
