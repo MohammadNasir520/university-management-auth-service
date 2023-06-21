@@ -94,6 +94,21 @@
             "date": 1687287602787,
             "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\successes\\phu-2023-06-21-01-success.log",
             "hash": "a209dd67e35e46434e94720fb30e5327fb43972751b6d7bd1323b71dd4d640ad"
+        },
+        {
+            "date": 1687322768406,
+            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\successes\\phu-2023-06-21-10-success.log",
+            "hash": "343c918db04dfbc97ebf6d491c840f2c675a73e204fabc6c6a91c5f844e2390e"
+        },
+        {
+            "date": 1687326819346,
+            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\successes\\phu-2023-06-21-11-success.log",
+            "hash": "86dfefc04451c34b46e8af1b1ddddab433afe2c7099e5a6aca67d0d9565c2f51"
+        },
+        {
+            "date": 1687327533847,
+            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\successes\\phu-2023-06-21-12-success.log",
+            "hash": "9cad9b2bfa9c6c32d4aba5cc1dd3f0ee130454c21e9cf6d089c27ea10fcac99c"
         }
     ],
     "hashType": "sha256"

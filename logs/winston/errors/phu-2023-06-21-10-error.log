@@ -1,0 +1,2 @@
+ Wed Jun 21 2023  10:49:48 [PH] error: fail to connect database querySrv ETIMEOUT _mongodb._tcp.cluster0.c5dej4c.mongodb.net
+ Wed Jun 21 2023  10:54:47 [PH] error: fail to connect database querySrv ETIMEOUT _mongodb._tcp.cluster0.c5dej4c.mongodb.net
