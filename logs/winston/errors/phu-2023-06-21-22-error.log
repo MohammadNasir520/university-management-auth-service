@@ -1,0 +1,4 @@
+ Wed Jun 21 2023  22:51:11 [PH] error: fail to connect database querySrv EREFUSED _mongodb._tcp.cluster0.c5dej4c.mongodb.net
+ Wed Jun 21 2023  22:51:54 [PH] error: fail to connect database querySrv EREFUSED _mongodb._tcp.cluster0.c5dej4c.mongodb.net
+ Wed Jun 21 2023  22:52:56 [PH] error: fail to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.c5dej4c.mongodb.net
+ Wed Jun 21 2023  22:53:9 [PH] error: fail to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.c5dej4c.mongodb.net

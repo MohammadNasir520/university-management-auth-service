@@ -1,21 +1,22 @@
-import { RequestHandler } from 'express';
+import { NextFunction, Request, RequestHandler, Response } from 'express';
 import { UserService } from './user.service';
+import catchAsync from '../../../shared/catchasync';
+import sendResponse from '../../../shared/sendResponse';
+import httpStatus from 'http-status';
 
-const createUser: RequestHandler = async (req, res, next) => {
-  try {
-    // await createUserZodSchema.parseAsync(req)
-
-    const { user } = req.body;
+const createUser: RequestHandler = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const user = req.body;
     const result = await UserService.createUser(user);
-    res.status(200).json({
+    sendResponse(res, {
+      statusCode: httpStatus.OK,
       success: true,
       message: ' user created successfully',
       data: result,
     });
-  } catch (err) {
-    next(err);
+    next();
   }
-};
+);
 
 export const UserController = {
   createUser,
