@@ -29,18 +29,47 @@ const getAllSemesters = async (
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
   const { searchTerm } = filters;
 
-  const andConditions = [
-    {
-      $or: [
-        {
-          title: {
-            $regex: searchTerm,
-            $options: 'i',
-          },
+  // const andConditions = [
+  //   {
+  //     $or: [
+  //       {
+  //         title: {
+  //           $regex: searchTerm,
+  //           $options: 'i',
+  //         },
+  //       },
+  //       {
+  //         code: {
+  //           $regex: searchTerm,
+  //           $options: 'i',
+  //         },
+  //       },
+  //       {
+  //         year: {
+  //           $regex: searchTerm,
+  //           $options: 'i',
+  //         },
+  //       },
+  //     ],
+  //   },
+  // ];
+
+  const academicSemesterSearchableFields = ['title', 'code', 'year'];
+
+  const andConditions = [];
+
+  if (searchTerm) {
+    andConditions.push({
+      $or: academicSemesterSearchableFields.map(field => ({
+        [field]: {
+          $regex: searchTerm,
+          $options: 'i',
         },
-      ],
-    },
-  ];
+      })),
+    });
+  }
+  const whereCondition =
+    andConditions.length > 0 ? { $and: andConditions } : {};
 
   const { page, limit, skip, sortBy, sortOrder } =
     paginationHelper.calculationPagination(paginationOptions);
@@ -51,7 +80,7 @@ const getAllSemesters = async (
     sortConditions[sortBy] = sortOrder;
   }
 
-  const result = await AcademicSemester.find({ $and: andConditions })
+  const result = await AcademicSemester.find(whereCondition)
     .sort(sortConditions)
     .skip(skip)
     .limit(limit);
