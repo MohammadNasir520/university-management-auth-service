@@ -105,8 +105,31 @@ const getSingleSemester = async (
   return result;
 };
 
+const updateSemester = async (
+  id: string,
+  payload: Partial<IAcademicSemester>
+) => {
+  if (
+    payload.title &&
+    payload.code &&
+    academicSemesterTitleCoderMapper[payload.title] !== payload.code
+  ) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'invalid semester Code');
+  }
+  const result = await AcademicSemester.findOneAndUpdate(
+    { _id: id },
+    {
+      $set: payload,
+    },
+    { upsert: true, new: true }
+  );
+
+  return result;
+};
+
 export const AcademicSemesterService = {
   createSemester,
   getAllSemesters,
   getSingleSemester,
+  updateSemester,
 };
