@@ -1,185 +1,185 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\.d5b1b8325ac5d9799680eebb474acb8ad3d09d96-audit.json",
+  "files": [
+    {
+      "date": 1687178356954,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-19-18-error.log",
+      "hash": "8579ba3d1087ec0492dde0609f2b60cae585a8eb035c15e1d82d84b74bf4cf49"
     },
-    "auditLog": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\.d5b1b8325ac5d9799680eebb474acb8ad3d09d96-audit.json",
-    "files": [
-        {
-            "date": 1687178356954,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-19-18-error.log",
-            "hash": "8579ba3d1087ec0492dde0609f2b60cae585a8eb035c15e1d82d84b74bf4cf49"
-        },
-        {
-            "date": 1687179792043,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-19-19-error.log",
-            "hash": "2c2b599bace2618cd2043fdd9f484b01e50f328f3a5b52981d927111f405369e"
-        },
-        {
-            "date": 1687190421941,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-19-22-error.log",
-            "hash": "71a790d41806f4908c467a08dfacb3cb8adc71620a8120e631a3c2c366ac2d8c"
-        },
-        {
-            "date": 1687194293761,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-19-23-error.log",
-            "hash": "8bdb37221ba059393c73f455711d19dfe71e3451757c6df34eb2a39db9722f31"
-        },
-        {
-            "date": 1687235092646,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-10-error.log",
-            "hash": "f1439e53320b54e27f5d480f760492de5b9d73389ecd5c1a51f0fcf7a9dcdeaa"
-        },
-        {
-            "date": 1687237350219,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-11-error.log",
-            "hash": "9ef628ee0502527ca199d59481d354c62801f507b4bed42b1d9bd2f986890063"
-        },
-        {
-            "date": 1687240943559,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-12-error.log",
-            "hash": "88790a1b968ea3ad81ca8bd018f3f9a0771db156e3ccfda0c7c46bb715824092"
-        },
-        {
-            "date": 1687247955767,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-13-error.log",
-            "hash": "fe5b93fd70443528081adb08271a35a043b62d561d1d5b9ccc736cc74085a98c"
-        },
-        {
-            "date": 1687248770287,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-14-error.log",
-            "hash": "2b8c989317c51e0e4d8931f067cc8c64b054ccaaee325f64e758b6e1e2e5f4c9"
-        },
-        {
-            "date": 1687252558282,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-15-error.log",
-            "hash": "57ba47f1fc953980ab147eba07a0c334a5a3a53eb1a2937a9564e72e79a3b3ba"
-        },
-        {
-            "date": 1687255206181,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-16-error.log",
-            "hash": "049ec484050b9f05d7b77f1f27329c7abe3058406e3aaff2907581adb7495143"
-        },
-        {
-            "date": 1687261099649,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-17-error.log",
-            "hash": "bf25499572e54d9bea5a2729429ac432ab53cd0fe62ab4d41babb428f8c068a4"
-        },
-        {
-            "date": 1687267082892,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-19-error.log",
-            "hash": "7464c4f12e77fcfefaa56d005370f71453a3281577c6847501c40b04d28e61d2"
-        },
-        {
-            "date": 1687269760060,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-20-error.log",
-            "hash": "af6997687569d94cb6e3bcd299ddb3d01461cbdea35c955f33fc8096c01a7500"
-        },
-        {
-            "date": 1687280049228,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-22-error.log",
-            "hash": "9eaee5625444c7617b44fe58bca8390ace55a9ae81c4af71446becd0737d0563"
-        },
-        {
-            "date": 1687281969746,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-23-error.log",
-            "hash": "d55c89d00d2e4f9b3ec5bb5e5a2b21cdf33e7aae3cb2a63e9bb13b24fc4b4a7f"
-        },
-        {
-            "date": 1687287455072,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-00-error.log",
-            "hash": "cfb32a023329bfb5f97aa022c6bfdaee58ba7370609f7e4bd537c544085f4710"
-        },
-        {
-            "date": 1687287602793,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-01-error.log",
-            "hash": "142d125a7019d39504a8168dd0c6bdc09701918ffcf4298329b0bbc766e7c36f"
-        },
-        {
-            "date": 1687322768411,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-10-error.log",
-            "hash": "e2e2811d08131f40e8f67119035a64ea9ee8c65fe738313b1f182c4627046a83"
-        },
-        {
-            "date": 1687326819356,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-11-error.log",
-            "hash": "77f8adcda394e6709843b879529824ce0638d7535cb62f04a23dc74974ce33e6"
-        },
-        {
-            "date": 1687327533853,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-12-error.log",
-            "hash": "0b7ff3f47e4d6909d5ac70be6287295f122dd53a17457197c30045f4179d7ea9"
-        },
-        {
-            "date": 1687359896419,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-21-error.log",
-            "hash": "184f1c4579b48e114a0ab45057c3cf5fa2effa7a65074c4cb2ff5f3879aa039a"
-        },
-        {
-            "date": 1687364888429,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-22-error.log",
-            "hash": "595e7e5c31f697ea9180e77237114a78857c03512a9635d6c62ca7e111f38c93"
-        },
-        {
-            "date": 1687367082656,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-23-error.log",
-            "hash": "abf8f8744670479a6cf7e1407a14c13d37d98d9022bcacdecdde319feb91005f"
-        },
-        {
-            "date": 1687407129939,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-10-error.log",
-            "hash": "ebf7370507af39c4480f1e1927e5feb9334f9cc0ffc02a109a020d92005ab160"
-        },
-        {
-            "date": 1687410080705,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-11-error.log",
-            "hash": "a07a991011ee53a7e2cd2af9db02fa4cbf2f4dd678c3f518c3882f51edcb6783"
-        },
-        {
-            "date": 1687414869904,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-12-error.log",
-            "hash": "2abfbe3a7951a6c4a6682818c50bdfa509787ea427d7282a2b0a7669810facda"
-        },
-        {
-            "date": 1687417474417,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-13-error.log",
-            "hash": "edf550576053be7f5893213144b6a7c82ac75a22b9cadb272b53797969b30dbe"
-        },
-        {
-            "date": 1687423523034,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-14-error.log",
-            "hash": "e079b1bdaf5b4994062cbbbfea186e036203aba94fb79b3cbcdc072759eb4560"
-        },
-        {
-            "date": 1687425653206,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-15-error.log",
-            "hash": "d2f2a06c195fb2595f146e11f8bb4dc38c638599e6fbb940083be40432ede210"
-        },
-        {
-            "date": 1687431507349,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-16-error.log",
-            "hash": "5e933908821cdaac089f6e44c18a5b32cf082cfcd148f3aea1bbaefd4aca7145"
-        },
-        {
-            "date": 1687433371988,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-17-error.log",
-            "hash": "bf67567eb6e482b6bb1659a6c77ef5e270f3f7bac6d6542a4cbf1c9d268a50d9"
-        },
-        {
-            "date": 1687439296163,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-19-error.log",
-            "hash": "467a3f0fa9058103af2fe8576af2400614907245e0f4e07688cd9ba81124b301"
-        },
-        {
-            "date": 1687442457615,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-20-error.log",
-            "hash": "d9d3e4e0bf4b10936f3484e625ea49b4e03dff71447f02363750ee989f332a2a"
-        },
-        {
-            "date": 1687446001362,
-            "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-21-error.log",
-            "hash": "b747a9391ad97849f4842dd109ee7844cc9f1bec3681c46a951e467787d1c106"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1687179792043,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-19-19-error.log",
+      "hash": "2c2b599bace2618cd2043fdd9f484b01e50f328f3a5b52981d927111f405369e"
+    },
+    {
+      "date": 1687190421941,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-19-22-error.log",
+      "hash": "71a790d41806f4908c467a08dfacb3cb8adc71620a8120e631a3c2c366ac2d8c"
+    },
+    {
+      "date": 1687194293761,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-19-23-error.log",
+      "hash": "8bdb37221ba059393c73f455711d19dfe71e3451757c6df34eb2a39db9722f31"
+    },
+    {
+      "date": 1687235092646,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-10-error.log",
+      "hash": "f1439e53320b54e27f5d480f760492de5b9d73389ecd5c1a51f0fcf7a9dcdeaa"
+    },
+    {
+      "date": 1687237350219,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-11-error.log",
+      "hash": "9ef628ee0502527ca199d59481d354c62801f507b4bed42b1d9bd2f986890063"
+    },
+    {
+      "date": 1687240943559,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-12-error.log",
+      "hash": "88790a1b968ea3ad81ca8bd018f3f9a0771db156e3ccfda0c7c46bb715824092"
+    },
+    {
+      "date": 1687247955767,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-13-error.log",
+      "hash": "fe5b93fd70443528081adb08271a35a043b62d561d1d5b9ccc736cc74085a98c"
+    },
+    {
+      "date": 1687248770287,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-14-error.log",
+      "hash": "2b8c989317c51e0e4d8931f067cc8c64b054ccaaee325f64e758b6e1e2e5f4c9"
+    },
+    {
+      "date": 1687252558282,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-15-error.log",
+      "hash": "57ba47f1fc953980ab147eba07a0c334a5a3a53eb1a2937a9564e72e79a3b3ba"
+    },
+    {
+      "date": 1687255206181,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-16-error.log",
+      "hash": "049ec484050b9f05d7b77f1f27329c7abe3058406e3aaff2907581adb7495143"
+    },
+    {
+      "date": 1687261099649,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-17-error.log",
+      "hash": "bf25499572e54d9bea5a2729429ac432ab53cd0fe62ab4d41babb428f8c068a4"
+    },
+    {
+      "date": 1687267082892,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-19-error.log",
+      "hash": "7464c4f12e77fcfefaa56d005370f71453a3281577c6847501c40b04d28e61d2"
+    },
+    {
+      "date": 1687269760060,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-20-error.log",
+      "hash": "af6997687569d94cb6e3bcd299ddb3d01461cbdea35c955f33fc8096c01a7500"
+    },
+    {
+      "date": 1687280049228,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-22-error.log",
+      "hash": "9eaee5625444c7617b44fe58bca8390ace55a9ae81c4af71446becd0737d0563"
+    },
+    {
+      "date": 1687281969746,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-20-23-error.log",
+      "hash": "d55c89d00d2e4f9b3ec5bb5e5a2b21cdf33e7aae3cb2a63e9bb13b24fc4b4a7f"
+    },
+    {
+      "date": 1687287455072,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-00-error.log",
+      "hash": "cfb32a023329bfb5f97aa022c6bfdaee58ba7370609f7e4bd537c544085f4710"
+    },
+    {
+      "date": 1687287602793,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-01-error.log",
+      "hash": "142d125a7019d39504a8168dd0c6bdc09701918ffcf4298329b0bbc766e7c36f"
+    },
+    {
+      "date": 1687322768411,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-10-error.log",
+      "hash": "e2e2811d08131f40e8f67119035a64ea9ee8c65fe738313b1f182c4627046a83"
+    },
+    {
+      "date": 1687326819356,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-11-error.log",
+      "hash": "77f8adcda394e6709843b879529824ce0638d7535cb62f04a23dc74974ce33e6"
+    },
+    {
+      "date": 1687327533853,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-12-error.log",
+      "hash": "0b7ff3f47e4d6909d5ac70be6287295f122dd53a17457197c30045f4179d7ea9"
+    },
+    {
+      "date": 1687359896419,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-21-error.log",
+      "hash": "184f1c4579b48e114a0ab45057c3cf5fa2effa7a65074c4cb2ff5f3879aa039a"
+    },
+    {
+      "date": 1687364888429,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-22-error.log",
+      "hash": "595e7e5c31f697ea9180e77237114a78857c03512a9635d6c62ca7e111f38c93"
+    },
+    {
+      "date": 1687367082656,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-21-23-error.log",
+      "hash": "abf8f8744670479a6cf7e1407a14c13d37d98d9022bcacdecdde319feb91005f"
+    },
+    {
+      "date": 1687407129939,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-10-error.log",
+      "hash": "ebf7370507af39c4480f1e1927e5feb9334f9cc0ffc02a109a020d92005ab160"
+    },
+    {
+      "date": 1687410080705,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-11-error.log",
+      "hash": "a07a991011ee53a7e2cd2af9db02fa4cbf2f4dd678c3f518c3882f51edcb6783"
+    },
+    {
+      "date": 1687414869904,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-12-error.log",
+      "hash": "2abfbe3a7951a6c4a6682818c50bdfa509787ea427d7282a2b0a7669810facda"
+    },
+    {
+      "date": 1687417474417,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-13-error.log",
+      "hash": "edf550576053be7f5893213144b6a7c82ac75a22b9cadb272b53797969b30dbe"
+    },
+    {
+      "date": 1687423523034,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-14-error.log",
+      "hash": "e079b1bdaf5b4994062cbbbfea186e036203aba94fb79b3cbcdc072759eb4560"
+    },
+    {
+      "date": 1687425653206,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-15-error.log",
+      "hash": "d2f2a06c195fb2595f146e11f8bb4dc38c638599e6fbb940083be40432ede210"
+    },
+    {
+      "date": 1687431507349,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-16-error.log",
+      "hash": "5e933908821cdaac089f6e44c18a5b32cf082cfcd148f3aea1bbaefd4aca7145"
+    },
+    {
+      "date": 1687433371988,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-17-error.log",
+      "hash": "bf67567eb6e482b6bb1659a6c77ef5e270f3f7bac6d6542a4cbf1c9d268a50d9"
+    },
+    {
+      "date": 1687439296163,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-19-error.log",
+      "hash": "467a3f0fa9058103af2fe8576af2400614907245e0f4e07688cd9ba81124b301"
+    },
+    {
+      "date": 1687442457615,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-20-error.log",
+      "hash": "d9d3e4e0bf4b10936f3484e625ea49b4e03dff71447f02363750ee989f332a2a"
+    },
+    {
+      "date": 1687446001362,
+      "name": "C:\\Projects\\appollo-level-2\\Milstone3\\universitymanagement-auth-service\\logs\\winston\\errors\\phu-2023-06-22-21-error.log",
+      "hash": "b747a9391ad97849f4842dd109ee7844cc9f1bec3681c46a951e467787d1c106"
+    }
+  ],
+  "hashType": "sha256"
 }
