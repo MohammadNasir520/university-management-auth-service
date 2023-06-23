@@ -21,17 +21,23 @@ const academicSemesterMonths = [
 
 const createAcademicSemesterZodSchema = z.object({
   body: z.object({
+    //
     title: z.enum(['Autumn', 'Summer', 'Fall'], {
       required_error: 'title is required',
     }),
+
     year: z.string({ required_error: 'year must be number and required' }),
+
     code: z.enum(['01', '02', '03']),
+
     startMonth: z.enum([...academicSemesterMonths] as [string, ...[]], {
       required_error: 'Start Month is required',
     }),
+
     endMonth: z.enum([...academicSemesterMonths] as [string, ...[]], {
       required_error: 'end Month is required',
     }),
+    //
   }),
 });
 

@@ -1,4 +1,4 @@
-import { ErrorRequestHandler } from 'express';
+import { ErrorRequestHandler, NextFunction } from 'express';
 import config from '../../config';
 import { IGenericErrorMessage } from '../../interfaces/error';
 import handleValidationError from '../../errors/handleValidationError';
@@ -9,7 +9,13 @@ import { ZodError } from 'zod';
 import handleZodError from '../../errors/handleZodError';
 import { handleCastError } from '../../errors/handleCastError';
 
-const globalErrorHandlar: ErrorRequestHandler = (error, req, res) => {
+const globalErrorHandlar: ErrorRequestHandler = (
+  error,
+  req,
+  res,
+  next: NextFunction
+) => {
+  // console.log('gllobar erro handlear consoleded');
   // eslint-disable-next-line no-unused-expressions
   config.env === 'development'
     ? console.log('globalErrorHandler', error)
@@ -71,5 +77,6 @@ const globalErrorHandlar: ErrorRequestHandler = (error, req, res) => {
     errorMessages,
     stack: config.env !== 'production' ? error?.stack : undefined,
   });
+  next();
 };
 export default globalErrorHandlar;

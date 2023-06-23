@@ -15,11 +15,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/v1/', routes);
 
-// app running checking route
-app.get('/', (req: Request, res: Response) => {
-  res.send('university management server is running');
-});
-
 app.use(globalErrorHandlar);
 
 // handle not found route
