@@ -9,7 +9,7 @@ import { ZodError } from 'zod';
 import handleZodError from '../../errors/handleZodError';
 import { handleCastError } from '../../errors/handleCastError';
 
-const globalErrorHandlar: ErrorRequestHandler = (error, req, res, next) => {
+const globalErrorHandlar: ErrorRequestHandler = (error, req, res) => {
   // eslint-disable-next-line no-unused-expressions
   config.env === 'development'
     ? console.log('globalErrorHandler', error)
@@ -19,10 +19,11 @@ const globalErrorHandlar: ErrorRequestHandler = (error, req, res, next) => {
   let message = 'something went wrong';
   let errorMessages: IGenericErrorMessage[] = [];
 
-  /*here three type of error 
+  /*here many types of error 
   1.mongoose error
-  2. error with custom type ApiError
-  3.Error for missing something and for mistake
+  2. error with custom type ApiError.
+  3. CastError
+  4.Error for missing something and for mistake
   */
   if (error?.name === 'validationError') {
     const simplifiedError = handleValidationError(error);
@@ -70,6 +71,5 @@ const globalErrorHandlar: ErrorRequestHandler = (error, req, res, next) => {
     errorMessages,
     stack: config.env !== 'production' ? error?.stack : undefined,
   });
-  next();
 };
 export default globalErrorHandlar;
