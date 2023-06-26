@@ -1,11 +1,10 @@
+"use strict";
 // //
 // import { createLogger, format, transports } from 'winston';
 // const { combine, timestamp, label, printf } = format; // prettyPrint
 // import path from 'path';
-
 // import DailyRotateFile from 'winston-daily-rotate-file';
 // // custom log format
-
 // const myFormat = printf(({ level, message, label, timestamp }) => {
 //   const date = new Date(timestamp);
 //   const hour = date.getHours();
@@ -13,7 +12,6 @@
 //   const seconds = date.getSeconds();
 //   return ` ${date.toDateString()}  ${hour}:${minutes}:${seconds} [${label}] ${level}: ${message}`;
 // });
-
 // const logger = createLogger({
 //   level: 'info',
 //   format: combine(label({ label: 'PH' }), timestamp(), myFormat),
@@ -37,13 +35,11 @@
 //     }),
 //   ],
 // });
-
 // const errorLogger = createLogger({
 //   level: 'error',
 //   format: combine(label({ label: 'PH' }), timestamp(), myFormat),
 //   transports: [
 //     new transports.Console(),
-
 //     new DailyRotateFile({
 //       filename: path.join(
 //         process.cwd(),
@@ -59,5 +55,4 @@
 //     }),
 //   ],
 // });
-
 // export { logger, errorLogger };

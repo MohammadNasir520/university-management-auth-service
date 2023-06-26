@@ -16,6 +16,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/v1/', routes);
 
+app.get('/', (req: Request, res: Response) => {
+  res.send('university-auth-backend server running successfully');
+});
+
 app.use(globalErrorHandlar);
 
 // handle not found route
