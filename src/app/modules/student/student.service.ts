@@ -5,6 +5,8 @@ import { SortOrder } from 'mongoose';
 import { IStudent, IStudentFilters } from './student.interface';
 import { Student } from './student.model';
 import { studentSearchableFields } from './student.constant';
+import ApiError from '../../../errors/ApiError';
+import httpStatus from 'http-status';
 
 // service
 
@@ -102,12 +104,48 @@ const getSingleStudent = async (id: string): Promise<IStudent | null> => {
 };
 
 const updateStudent = async (id: string, payload: Partial<IStudent>) => {
+  const isExist = await Student.findOne({ id });
+
+  if (!isExist) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'student not found');
+  }
+
+  const { name, guardian, localGuardian, ...studentDAta } = payload;
+  const updatedStudentData: Partial<IStudent> = { ...studentDAta };
+
+  // dynamicaly handling
+
+  if (name && Object.keys(name).length > 0) {
+    Object.keys(name).forEach(key => {
+      const nameKey = `name.${key}`;
+
+      (updatedStudentData as any)[nameKey] = name[key as keyof typeof name];
+    });
+  }
+
+  if (guardian && Object.keys(guardian).length > 0) {
+    Object.keys(guardian).forEach(key => {
+      const guardianKey = `guardian.${key}` as keyof Partial<IStudent>; // `guardian.fisrtguardian`
+      (updatedStudentData as any)[guardianKey] =
+        guardian[key as keyof typeof guardian];
+    });
+  }
+  if (localGuardian && Object.keys(localGuardian).length > 0) {
+    Object.keys(localGuardian).forEach(key => {
+      const localGuradianKey =
+        `localGuardian.${key}` as keyof Partial<IStudent>; // `localGuardian.fisrtName`
+      (updatedStudentData as any)[localGuradianKey] =
+        localGuardian[key as keyof typeof localGuardian];
+    });
+  }
+
   const result = await Student.findOneAndUpdate(
-    { _id: id },
-    {
-      $set: payload,
-    },
-    { upsert: true, new: true }
+    { id },
+    // {
+    //   $set: payload,
+    // },
+    updatedStudentData,
+    { new: true }
   );
 
   return result;
