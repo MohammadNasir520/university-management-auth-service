@@ -1,77 +1,93 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const config_1 = __importDefault(require("../../config"));
-const handleValidationError_1 = __importDefault(require("../../errors/handleValidationError"));
-const ApiError_1 = __importDefault(require("../../errors/ApiError"));
+'use strict';
+var __importDefault =
+  (this && this.__importDefault) ||
+  function (mod) {
+    return mod && mod.__esModule ? mod : { default: mod };
+  };
+Object.defineProperty(exports, '__esModule', { value: true });
+const config_1 = __importDefault(require('../../config'));
+const handleValidationError_1 = __importDefault(
+  require('../../errors/handleValidationError')
+);
+const ApiError_1 = __importDefault(require('../../errors/ApiError'));
 // import { errorLogger } from '../../shared/logger';
-const zod_1 = require("zod");
-const handleZodError_1 = __importDefault(require("../../errors/handleZodError"));
-const handleCastError_1 = require("../../errors/handleCastError");
+const zod_1 = require('zod');
+const handleZodError_1 = __importDefault(
+  require('../../errors/handleZodError')
+);
+const handleCastError_1 = require('../../errors/handleCastError');
 const globalErrorHandlar = (error, req, res, next) => {
-    // console.log('gllobar erro handlear consoleded');
-    // eslint-disable-next-line no-unused-expressions
-    config_1.default.env === 'development'
-        ? console.log('globalErrorHandler', error)
-        : console.log('globalErrorHandler', error);
-    let statusCode = 500;
-    let message = 'something went wrong';
-    let errorMessages = [];
-    /*here many types of error
+  // console.log('gllobar erro handlear consoleded');
+  // eslint-disable-next-line no-unused-expressions
+  config_1.default.env === 'development'
+    ? console.log('globalErrorHandler', error)
+    : console.log('globalErrorHandler', error);
+  let statusCode = 500;
+  let message = 'something went wrong';
+  let errorMessages = [];
+  /*here many types of error
     1.mongoose error
     2. error with custom type ApiError.
     3. CastError
     4.Error for missing something and for mistake
     */
-    if ((error === null || error === void 0 ? void 0 : error.name) === 'validationError') {
-        const simplifiedError = (0, handleValidationError_1.default)(error);
-        statusCode = simplifiedError.statusCode;
-        message = simplifiedError.message;
-        errorMessages = simplifiedError.errorMessages;
-    }
-    else if (error instanceof zod_1.ZodError) {
-        const simplifiedError = (0, handleZodError_1.default)(error);
-        statusCode = simplifiedError.statusCode;
-        message = simplifiedError.message;
-        errorMessages = simplifiedError.errorMessages;
-    }
-    else if (error.name === 'CastError') {
-        const simplifiedError = (0, handleCastError_1.handleCastError)(error);
-        statusCode = simplifiedError.statusCode;
-        message = simplifiedError.message;
-        errorMessages = simplifiedError.errorMessages;
-    }
-    else if (error instanceof ApiError_1.default) {
-        statusCode = error === null || error === void 0 ? void 0 : error.statusCode;
-        message = error === null || error === void 0 ? void 0 : error.message;
-        errorMessages = (error === null || error === void 0 ? void 0 : error.message)
-            ? [
-                {
-                    path: '',
-                    message: error === null || error === void 0 ? void 0 : error.message,
-                },
-            ]
-            : [];
-    }
-    else if (error instanceof Error) {
-        message = error === null || error === void 0 ? void 0 : error.message;
-        errorMessages = (error === null || error === void 0 ? void 0 : error.message)
-            ? [
-                {
-                    path: '',
-                    message: error === null || error === void 0 ? void 0 : error.message,
-                },
-            ]
-            : [];
-    }
-    res.status(statusCode).json({
-        success: false,
-        message,
-        errorMessages,
-        stack: config_1.default.env !== 'production' ? error === null || error === void 0 ? void 0 : error.stack : undefined,
-    });
-    next();
+  if (
+    (error === null || error === void 0 ? void 0 : error.name) ===
+    'validationError'
+  ) {
+    const simplifiedError = (0, handleValidationError_1.default)(error);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessages = simplifiedError.errorMessages;
+  } else if (error instanceof zod_1.ZodError) {
+    const simplifiedError = (0, handleZodError_1.default)(error);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessages = simplifiedError.errorMessages;
+  } else if (error.name === 'CastError') {
+    const simplifiedError = (0, handleCastError_1.handleCastError)(error);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessages = simplifiedError.errorMessages;
+  } else if (error instanceof ApiError_1.default) {
+    statusCode = error === null || error === void 0 ? void 0 : error.statusCode;
+    message = error === null || error === void 0 ? void 0 : error.message;
+    errorMessages = (
+      error === null || error === void 0 ? void 0 : error.message
+    )
+      ? [
+          {
+            path: '',
+            message:
+              error === null || error === void 0 ? void 0 : error.message,
+          },
+        ]
+      : [];
+  } else if (error instanceof Error) {
+    message = error === null || error === void 0 ? void 0 : error.message;
+    errorMessages = (
+      error === null || error === void 0 ? void 0 : error.message
+    )
+      ? [
+          {
+            path: '',
+            message:
+              error === null || error === void 0 ? void 0 : error.message,
+          },
+        ]
+      : [];
+  }
+  res.status(statusCode).json({
+    success: false,
+    message,
+    errorMessages,
+    stack:
+      config_1.default.env !== 'production'
+        ? error === null || error === void 0
+          ? void 0
+          : error.stack
+        : undefined,
+  });
+  next();
 };
 exports.default = globalErrorHandlar;

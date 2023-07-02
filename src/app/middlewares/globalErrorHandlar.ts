@@ -5,9 +5,10 @@ import handleValidationError from '../../errors/handleValidationError';
 
 import ApiError from '../../errors/ApiError';
 // import { errorLogger } from '../../shared/logger';
-import { ZodError } from 'zod';
+
 import handleZodError from '../../errors/handleZodError';
 import { handleCastError } from '../../errors/handleCastError';
+import { ZodError } from 'zod';
 
 const globalErrorHandlar: ErrorRequestHandler = (
   error,

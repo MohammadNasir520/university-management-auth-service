@@ -118,7 +118,6 @@ const updateStudent = async (id: string, payload: Partial<IStudent>) => {
   if (name && Object.keys(name).length > 0) {
     Object.keys(name).forEach(key => {
       const nameKey = `name.${key}`;
-
       (updatedStudentData as any)[nameKey] = name[key as keyof typeof name];
     });
   }
