@@ -3,15 +3,17 @@ import app from './app';
 import config from './config/index';
 // import { errorLogger, logger } from './shared/logger';
 import { Server } from 'http';
+import { RedisClient } from './shared/redis';
 
 async function bootstrap() {
   let server: Server;
   try {
+    await RedisClient.connect();
     await mongoose.connect(config.database_url as string);
-    console.log('database connect successfully');
+    console.log('authService database connect  successfully');
 
     server = app.listen(config.port, () => {
-      console.log(`server is running on port ${config.port}`);
+      console.log(` authService server  is running on port ${config.port}`);
     });
   } catch (err) {
     console.log('fail to connect database', err);
